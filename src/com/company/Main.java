@@ -11,12 +11,14 @@ public class Main {
 
 
 
+
     newCard.choosingSuits();
     newCard.choosingRanks();
 
+    //myNewCard.choosingSuits();
+    //myNewCard.choosingRanks();
+
     newCard.getDescription();
-
-
-
+    //myNewCard.getDescription();
     }
 }

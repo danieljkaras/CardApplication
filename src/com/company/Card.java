@@ -17,7 +17,7 @@ public class Card {
     public String yourInput() {
 
         Scanner source = new Scanner(System.in);
-        System.out.println("Plese tell me your choice: ");
+        System.out.println("Please tell me your choice: ");
         String yourChoice = source.nextLine();
 
         return yourChoice;
@@ -49,6 +49,7 @@ public class Card {
 
         System.out.println("Please tell me your Suit" + " " + Suits.HEARTS + " " + Suits.SPADES + " " + Suits.CLUBS + " " + Suits.DAIMONDS);
         String suits = yourInput();
+        suits = suits.toUpperCase();
 
         setNewSuits(Suits.valueOf(suits));
         //System.out.println(getNewSuits());
@@ -58,6 +59,7 @@ public class Card {
     public void choosingRanks() {
         System.out.println("Please tell me your Rank" + " " + Ranks.ACE + " " + Ranks.QUENN + " " + Ranks.JACK + " " + Ranks.KINGS);
         String ranks = yourInput();
+        ranks = ranks.toUpperCase();
 
         setNewRanks(Ranks.valueOf(ranks));
         //System.out.println(getNewRanks());
